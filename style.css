@@ -2,16 +2,28 @@
     width: 100px;
     height: 30px;
     background-color: blue;
-    color: white
+    color: white;
+    cursor: pointer;
 }
-#counter{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+.button:hover{
+    background-color: rgb(190, 190, 231);
 }
-#buttonSection{
+.text-input {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: rgb(234, 222, 222);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
