@@ -1,18 +1,28 @@
 const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+const input3 = document.getElementById('input3');
+const input4 = document.getElementById('input4');
+const p1 = document.getElementById('p1');
+const p2 = document.getElementById('p2');
 const button1 = document.getElementById('button1');
-const label1 = document.getElementById('label1');
-let age;
 
-button1.onclick = function() {
-    age = input1.value;
-    age = Number(age)
-if (age >= 0 && age <= 17) {
-    label1.textContent = `Masz za mało lat = ${age}`
-} else if (age >= 18 && age <=24){
-    label1.textContent = `Możesz przejść = ${age}`
-} else if (age >= 25) {
-    label1.textContent = `Jesesś za stary = ${age}`
-} else {
-    label1.textContent = `Wprowadz wiek`
+
+button1.onclick = function(){
+    if(input1.checked){
+        p1.textContent = `You are subscribed`
+    } else {
+        p1.textContent = `You are not subscribed`
+    }
+    if(input2.checked){
+        p2.textContent = `You are paying with Blik`
+    } else if (input3.checked) {
+        p2.textContent = `You are paying with Paypal`
+    } else if (input4.checked){
+        p2.textContent = `You are paying with Visa`
+    } else {
+        p2.textContent = `Pick payement method`
+    }
 }
-}
+
+
+
