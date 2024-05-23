@@ -1,9 +1,4 @@
-.button {
-    width: 100px;
-    height: 30px;
-    background-color: blue;
-    color: white
-}
+
 #counter{
     display: flex;
     justify-content: center;
@@ -15,3 +10,33 @@
     align-items: center;
     justify-content: center;
 }
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(190, 190, 231);
+}
+.text-input {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: rgb(234, 222, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
