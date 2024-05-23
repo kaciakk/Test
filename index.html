@@ -9,12 +9,21 @@
   <body>
     <main>
         <h1>HI</h1>
-        <h2>DICE ROLLER</h2>
-        <input type="number" id="input1" class="text-input" ><br>
-        <button type="button" id="button1" class="button" onclick="rollDice()" >Roll Dice</button>
-        <div id="result-img"></div>
-        <div id="result"></div>
-
+        <button id="button1" class="button" onclick="generatePassword()">Generate Password</button><br>
+        <input id="input5"type="nubmer">
+        <div><br>
+        <input type="checkbox" id="input1">
+        <label for="input1">Small</label>
+        <input type="checkbox" id="input2">
+        <label for="input2">Large</label>
+        <input type="checkbox" id="input3">
+        <label for="input3">Symbol</label>
+        <input type="checkbox" id="input4">
+        <label for="input4">Number</label>
+      </div><br>
+        <label >Your Password: </label><br>
+        <p id="p1"></p>
+        
     </main>
 	<script src="app.js"></script>
   </body>
