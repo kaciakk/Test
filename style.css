@@ -26,4 +26,18 @@ main {
     align-items: center;
     justify-content: center;
 }
+#result-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#result-img img{
+    padding: 10px;
+    gap: 10px;
+    width: 100px;
+    height: 100px;
+   
+
+}
 
