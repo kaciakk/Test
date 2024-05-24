@@ -8,15 +8,30 @@
   </head>
   <body>
     <main>
-        <h1>Stopwatch</h1>
-        <div id="display-conatiner">
-          <div id="display">00:00:00:00</div>
-        </div>
-       <div class="button-container">
-        <button id="button1" class="button" onclick="startTime()">Start</button><br>
-        <button id="button2" class="button" onclick="stopTime()">Stop</button><br>
-        <button id="button3" class="button" onclick="resetTime()">Reset</button><br>
+        <h1>Calculator</h1>
+        <input id="display">
+        <div id="calc-buttons">
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('0')">0</button>
+   
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="calculate()">=</button>
+    
       </div>
+       
+   
     </main>
 	<script src="app.js"></script>
   </body>

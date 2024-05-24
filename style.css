@@ -69,3 +69,10 @@ main {
     font-size: 4em;
     font-weight: bold;
 }
+
+#calc-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+    padding:10px;
+}
