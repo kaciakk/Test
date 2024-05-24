@@ -8,21 +8,18 @@
   </head>
   <body>
     <main>
-        <h1>HI</h1>
-        <button id="button1" class="button" onclick="generatePassword()">Generate Password</button><br>
-        <input id="input5"type="nubmer">
-        <div><br>
-        <input type="checkbox" id="input1">
-        <label for="input1">Small</label>
-        <input type="checkbox" id="input2">
-        <label for="input2">Large</label>
-        <input type="checkbox" id="input3">
-        <label for="input3">Symbol</label>
-        <input type="checkbox" id="input4">
-        <label for="input4">Number</label>
-      </div><br>
-        <label >Your Password: </label><br>
+        <h1>Interest Calculator</h1>
+        <label for="input1">Principal Amount:</label>
+        <input type="number" id="input1">
+        <label for="input2">Interest Rate:</label>
+        <input type="number" id="input2">
+        <label for="input3">Years</label>
+        <input type="number" id="input3"><br>
+        
+        <button id="button1" class="button" onclick="calculate()">Sumbit</button><br>
+        <label >Total: </label>
         <p id="p1"></p>
+
         
     </main>
 	<script src="app.js"></script>
