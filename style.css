@@ -1,3 +1,5 @@
+
+
 .button {
     width: 100px;
     height: 40px;
@@ -7,6 +9,28 @@
 }
 .button:hover{
     background-color: rgb(190, 190, 231);
+}
+.button-container{
+    display: flex;
+    gap: 10px
+}
+#button1{
+    background-color: green;
+}
+#button1:hover{
+    background-color: rgb(4, 212, 4);
+}
+#button2{
+    background-color: rgb(162, 2, 2);
+}
+#button2:hover{
+    background-color: rgb(255, 48, 48);
+}
+#button3{
+    background-color: blue;
+}
+#button3:hover{
+    background-color: rgb(73, 73, 255);
 }
 .text-input {
     background-color: green;
@@ -41,3 +65,7 @@ main {
 
 }
 
+#display{
+    font-size: 4em;
+    font-weight: bold;
+}
