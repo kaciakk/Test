@@ -24,12 +24,16 @@
       }
    }
    
-   const humanSelection = getHumanChoice();
-   const computerSelection = getComputerChoice();
+
+
+ 
+function playGame(){
    let humanScore = 0;
    let computerScore = 0;
    
    function playRound(humanChoice, computerChoice) {
+      humanChoice = getHumanChoice();
+      computerChoice = getComputerChoice();
       if(humanChoice === computerChoice){
          console.log("remis")
       }else if (humanChoice === "kamien" && computerChoice === "papier"){
@@ -53,7 +57,13 @@
    }
    
    }
- 
 
-
-
+   for (let i=1; i<6; i++) {
+      playRound();
+      console.log(humanScore);
+      console.log(computerScore);
+      }
+   
+  
+}
+playGame();
