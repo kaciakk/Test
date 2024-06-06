@@ -1,69 +1,29 @@
+const conatiner = document.querySelector('#conatiner');
 
-   function getComputerChoice(){
-      let randNum = Math.random();
-      if(randNum <= 0.33333333){
-         return "kamien";
-      } else if(randNum > 0.333334 && randNum <= 0.666666){
-         return "papier";
-      } else {
-         return "nozyce";
-      }
-   }
-   
-   function getHumanChoice(){
-      let sign = prompt("What's your sign?")
-      if(sign.toLowerCase() === 'kamien'){
-         console.log("wybrałes Kamien");
-         return "kamien";
-      } else if(sign.toLowerCase() === "papier"){
-         console.log("wybrałes papier")
-         return "papier";
-      } else if(sign.toLowerCase() === "nozyce"){
-         console.log("wybrałes nozyce")
-         return "nozyce";
-      }
-   }
-   
+const content = document.createElement('div');
+content.classList.add('content');
 
+const pTag = document.createElement('p');
+pTag.innerText = 'Hej, jestem czerwony!';
+pTag.style.cssText = 'color: red'
 
- 
-function playGame(){
-   let humanScore = 0;
-   let computerScore = 0;
-   
-   function playRound(humanChoice, computerChoice) {
-      humanChoice = getHumanChoice();
-      computerChoice = getComputerChoice();
-      if(humanChoice === computerChoice){
-         console.log("remis")
-      }else if (humanChoice === "kamien" && computerChoice === "papier"){
-         console.log("kamień przegrywa z papierem. komputer wygrywa")
-         computerScore++
-      }else if (humanChoice === "kamien" && computerChoice === "nozyce"){
-         console.log("kamień wygrywa z nozyce. uzytkownik wygrywa")
-         humanScore++
-    }else if (humanChoice === "papier" && computerChoice === "nozyce"){
-      console.log("papier przegrywa z nozyce. uzytkownik przegrywa")
-      computerScore++
-   }else if (humanChoice === "papier" && computerChoice === "kamien"){
-      console.log("papier wyrgywa z kamien. uzytkownik wygrywa")
-       humanScore++
-   }else if (humanChoice === "nozyce" && computerChoice === "kamien"){
-      console.log("nozyce przegrywa z kamien. uzytkownik przgrywa")
-      computerScore++
-   }else if (humanChoice === "nozyce" && computerChoice === "papier"){
-      console.log("papier wyrgywa z kamien. uzytkownik wygrywa")
-       humanScore++
-   }
-   
-   }
+const h3Tag = document.createElement('h3');
+h3Tag.innerText = 'Jestem niebieskim h3!'
+h3Tag.style.cssText = 'color: blue'
 
-   for (let i=1; i<6; i++) {
-      playRound();
-      console.log(humanScore);
-      console.log(computerScore);
-      }
-   
-  
-}
-playGame();
+const div2 = document.createElement('div');
+div2.setAttribute ("style", 'border: 1px solid; background: pink;');
+
+const pTag2 = document.createElement('p');
+pTag2.innerText = 'Jestem w div';
+
+const h1Tag = document.createElement('h1');
+h1Tag.innerText = 'Ja też';
+
+div2.appendChild(pTag2);
+div2.appendChild(h1Tag);
+
+conatiner.appendChild(content);
+content.appendChild(pTag);
+content.appendChild(h3Tag);
+content.appendChild(div2);
