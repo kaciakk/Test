@@ -170,4 +170,7 @@ body{
     #reset-game {
         font-size: 16px;
     }
+    .footer{
+        display: none;
+    }
 }
